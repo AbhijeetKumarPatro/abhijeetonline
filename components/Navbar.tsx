@@ -27,9 +27,10 @@ export default function Navbar() {
               <Image
                 src="/Mylogo.PNG"
                 alt="Abhijeet Kumar Patro"
-                width={180}
-                height={45}
-                className="object-contain"
+                width={0}
+                height={0}
+                sizes="180px"
+                className="w-auto h-8 object-contain"
               />
               <span className="sr-only">AbhijeetOnline</span>
             </Link>
