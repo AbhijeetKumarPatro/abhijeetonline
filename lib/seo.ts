@@ -7,7 +7,7 @@ export function generateSEO(
   image?: string
 ): Metadata {
   const url = `https://abhijeetonline.com${path}`;
-  const defaultImage = '/og-image.jpg'; // Add this image to public/
+  const defaultImage = '/og-image.svg'; // Open Graph image for social sharing
 
   return {
     title,

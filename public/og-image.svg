@@ -1,0 +1,28 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#020a1f"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#gradient)"/>
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#020a1f;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0f2549;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#020a1f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Logo/Icon -->
+  <circle cx="150" cy="150" r="60" fill="none" stroke="#62c7ff" stroke-width="4"/>
+  <path d="M120 210 L150 150 L180 210 L210 150 L240 210 L240 270 L120 270 Z" fill="#62c7ff"/>
+
+  <!-- Main Text -->
+  <text x="300" y="200" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#ffffff">Abhijeet Kumar Patro</text>
+  <text x="300" y="250" font-family="Arial, sans-serif" font-size="24" fill="#62c7ff">Senior Business Analyst</text>
+  <text x="300" y="290" font-family="Arial, sans-serif" font-size="20" fill="#cccccc">Cards & Payments | Fraud Analytics | Banking Technology</text>
+
+  <!-- Website URL -->
+  <text x="300" y="350" font-family="Arial, sans-serif" font-size="18" fill="#62c7ff">abhijeetonline.com</text>
+
+  <!-- Decorative elements -->
+  <circle cx="1000" cy="100" r="30" fill="#62c7ff" opacity="0.3"/>
+  <circle cx="1050" cy="150" r="20" fill="#62c7ff" opacity="0.5"/>
+  <circle cx="1100" cy="120" r="25" fill="#62c7ff" opacity="0.4"/>
+</svg>

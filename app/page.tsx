@@ -9,8 +9,54 @@ export const metadata = generateSEO(
 );
 
 export default function Home() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abhijeet Kumar Patro",
+    "jobTitle": "Senior Business Analyst",
+    "description": "Senior Business Analyst specializing in Cards domain, Payments platforms, and Fraud analytics with 6+ years of experience in banking and financial services.",
+    "url": "https://abhijeetonline.com",
+    "sameAs": [
+      "https://linkedin.com/in/abhijeetpatro",
+      "https://twitter.com/abhijeetpatro",
+      "https://instagram.com/abhijeetpatro",
+      "https://youtube.com/@abhijeetpatro"
+    ],
+    "knowsAbout": [
+      "Business Analysis",
+      "Cards Domain",
+      "Payments Platforms",
+      "Fraud Analytics",
+      "Banking Technology",
+      "Commercial Cards",
+      "Credit Risk Management",
+      "Agile Methodologies",
+      "Product Management"
+    ],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Senior Business Analyst",
+      "occupationLocation": {
+        "@type": "City",
+        "name": "Bangalore",
+        "addressCountry": "IN"
+      }
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "National Institute of Science and Technology"
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-[#020a1f] text-white">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
+      />
+      <div className="min-h-screen bg-[#020a1f] text-white">
       {/* Hero Section */}
       <section className="relative overflow-hidden py-24 px-4 sm:px-6 lg:px-8">
         <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_top,_rgba(60,_161,_252,_0.4),_transparent_40%)]" />
@@ -90,5 +136,6 @@ export default function Home() {
         </div>
       </section>
     </div>
+    </>
   );
 }
