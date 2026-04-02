@@ -30,3 +30,33 @@ export interface TravelItem {
   description: string;
   location: string;
 }
+
+export interface TravelPhoto {
+  id: string;
+  src: string; // base64 or URL
+  alt: string;
+  title: string;
+  description: string;
+  uploadedAt: string;
+}
+
+export interface Certification {
+  id: string;
+  title: string;
+  issuer: string;
+  date: string;
+  thumbnail: string; // base64 or URL
+  fullImage: string; // base64 or URL
+  description: string;
+  uploadedAt: string;
+}
+
+export interface BlogPost {
+  title: string;
+  date: string;
+  slug: string;
+  category: 'Banking' | 'Travel' | 'General';
+  summary: string;
+  image?: string;
+  content: string;
+}

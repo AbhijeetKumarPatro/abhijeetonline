@@ -1,0 +1,12 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#ffffff"/>
+  <rect x="50" y="50" width="700" height="500" fill="#f8f9fa" stroke="#e9ecef" stroke-width="2"/>
+  <circle cx="400" cy="150" r="60" fill="#4299e1"/>
+  <rect x="350" y="250" width="100" height="8" fill="#495057" rx="4"/>
+  <rect x="370" y="270" width="60" height="6" fill="#6c757d" rx="3"/>
+  <text x="400" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#212529">Certified Scrum Master</text>
+  <text x="400" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#495057">Scrum Alliance</text>
+  <text x="400" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#6c757d">Certificate ID: CSM-2022-001</text>
+  <text x="400" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">Valid Through: December 2025</text>
+  <text x="400" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#adb5bd">This certificate is awarded to Abhijeet Kumar Patro for successfully completing the Certified Scrum Master training program.</text>
+</svg>

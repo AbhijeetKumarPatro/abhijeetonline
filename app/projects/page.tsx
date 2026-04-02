@@ -1,95 +1,101 @@
-import { generateSEO } from '@/lib/seo';
+'use client';
+
+import { useEffect, useState } from 'react';
 import { Project } from '@/types';
 
-export const metadata = generateSEO(
-  'Projects - Abhijeet Kumar Patro',
-  'Explore enterprise banking initiatives, platform building projects, and personal learning journeys in cards, payments, and fraud analytics.',
-  '/projects'
-);
-
-const projects: Project[] = [
-  // Enterprise Banking Initiatives
-  {
-    title: 'Commercial Cards Lifecycle Improvements',
-    description: 'Led optimization of commercial card issuance, management, and lifecycle processes across Citi ecosystem, resulting in improved operational efficiency and customer experience.',
-    category: 'Enterprise Banking Initiatives'
-  },
-  {
-    title: 'Fraud Analytics Modeling',
-    description: 'Developed statistical models for Fraud Early Warning System, implementing advanced analytics to detect and prevent fraudulent activities in real-time.',
-    category: 'Enterprise Banking Initiatives'
-  },
-  {
-    title: 'VisionPlus Integrations',
-    description: 'Enhanced VisionPlus ecosystem with new integrations and workflow improvements, supporting seamless card processing and management.',
-    category: 'Enterprise Banking Initiatives'
-  },
-  {
-    title: 'CitiManager Enhancements',
-    description: 'Implemented key improvements to CitiManager platform, focusing on user experience, performance optimization, and feature enhancements.',
-    category: 'Enterprise Banking Initiatives'
-  },
-  // Platform Building Initiatives
-  {
-    title: 'AbhijeetOnline.com',
-    description: 'Personal website showcasing expertise in Cards domain, Payments platforms, and Fraud analytics. A professional portfolio highlighting 4+ years of banking technology experience.',
-    category: 'Platform Building Initiatives',
-    link: 'https://abhijeetonline.com'
-  },
-  // Personal Learning Initiatives
-  {
-    title: 'Guitar Learning Journey',
-    description: 'Self-taught guitarist focusing on acoustic and fingerstyle techniques, with emphasis on music theory and composition.',
-    category: 'Personal Learning Initiatives'
-  },
-  {
-    title: 'Knowledge Sharing Platform',
-    description: 'Creating educational content and platforms to democratize banking knowledge and share industry insights with the community.',
-    category: 'Personal Learning Initiatives'
-  }
-];
-
 export default function ProjectsPage() {
-  const categories = ['Enterprise Banking Initiatives', 'Platform Building Initiatives', 'Personal Learning Initiatives'];
+  const [projects, setProjects] = useState<Project[]>([]);
+
+  useEffect(() => {
+    // Load projects from localStorage
+    const saved = localStorage.getItem('abhijeetonline_projects');
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) {
+          setProjects(parsed);
+        }
+      } catch (error) {
+        console.error('Failed to load projects:', error);
+      }
+    }
+  }, []);
+
+  const categories = [
+    { id: 'enterprise', title: 'Enterprise Banking Initiatives', description: 'Large-scale banking technology projects and platform enhancements' },
+    { id: 'platform', title: 'Platform Building Initiatives', description: 'Digital platforms and tools I\'ve built or contributed to' },
+    { id: 'personal', title: 'Personal Learning Initiatives', description: 'Self-directed learning projects and knowledge sharing' }
+  ];
+
+  const getProjectsByCategory = (category: string) => {
+    return projects.filter(project => project.category === category);
+  };
 
   return (
     <div className="min-h-screen bg-[#020a1f] text-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl font-bold text-white mb-12 text-center">
+        <h1 className="text-4xl font-bold text-white mb-8 text-center">
           Projects & Initiatives
         </h1>
 
-        {categories.map((category) => (
-          <section
-            key={category}
-            className="mb-16"
-          >
-            <h2 className="text-3xl font-semibold text-blue-200 mb-8">{category}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {projects
-                .filter(project => project.category === category)
-                .map((project) => (
-                  <div
-                    key={project.title}
-                    className="bg-[#0c1f44] p-6 rounded-lg shadow-sm border border-blue-500/20 hover:shadow-md transition-shadow"
-                  >
-                    <h3 className="text-xl font-semibold text-white mb-3">{project.title}</h3>
-                    <p className="text-gray-300 mb-4">{project.description}</p>
-                    {project.link && (
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-300 hover:text-blue-100 font-medium"
-                      >
-                        Learn More →
-                      </a>
-                    )}
+        <p className="text-lg text-gray-300 text-center mb-12 max-w-3xl mx-auto">
+          A showcase of my work across enterprise banking solutions, platform development, and personal learning journeys. Each project represents a unique challenge and learning opportunity in the evolving landscape of financial technology.
+        </p>
+
+        {projects.length > 0 ? (
+          <div className="space-y-16">
+            {categories.map((category) => {
+              const categoryProjects = getProjectsByCategory(category.title);
+              if (categoryProjects.length === 0) return null;
+
+              return (
+                <div key={category.id}>
+                  <div className="mb-8">
+                    <h2 className="text-3xl font-bold text-white mb-4">{category.title}</h2>
+                    <p className="text-gray-400">{category.description}</p>
                   </div>
-                ))}
-            </div>
-          </section>
-        ))}
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {categoryProjects.map((project, index) => (
+                      <div key={index} className="bg-[#0b1f41] rounded-lg p-6 border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300">
+                        <h3 className="text-xl font-semibold text-white mb-3">{project.title}</h3>
+                        <p className="text-gray-300 mb-4 leading-relaxed">{project.description}</p>
+
+                        {project.technologies && project.technologies.length > 0 && (
+                          <div className="mb-4">
+                            <p className="text-sm text-gray-400 mb-2">Technologies:</p>
+                            <div className="flex flex-wrap gap-2">
+                              {project.technologies.map((tech, i) => (
+                                <span key={i} className="px-2 py-1 bg-blue-600 rounded text-xs">
+                                  {tech}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                        {project.link && (
+                          <a
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors"
+                          >
+                            View Project →
+                          </a>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        ) : (
+          <div className="text-center py-12">
+            <p className="text-gray-400 text-lg">Projects will be displayed here once added through the admin panel.</p>
+          </div>
+        )}
       </div>
     </div>
   );
