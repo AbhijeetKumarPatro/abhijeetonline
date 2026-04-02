@@ -56,7 +56,7 @@ export default function Navbar() {
             </div>
 
             <a
-              href="/abhijeet-patro-resume.pdf"
+              href="/BA_AbhijeetKumar_Patro_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors"
