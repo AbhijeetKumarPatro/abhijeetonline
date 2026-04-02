@@ -56,10 +56,12 @@ export default function Navbar() {
             </div>
 
             <a
-              href="#contact"
+              href="/abhijeet-patro-resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors"
             >
-              Get In Touch →
+              Download My Resume →
             </a>
           </div>
         </div>
