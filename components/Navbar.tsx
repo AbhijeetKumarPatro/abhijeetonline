@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
@@ -22,8 +23,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link href="/" className="text-xl font-bold text-gray-900">
-              AbhijeetOnline
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/file.svg"
+                alt="Abhijeet Kumar Patro"
+                width={160}
+                height={40}
+                className="object-contain"
+              />
+              <span className="sr-only">AbhijeetOnline</span>
             </Link>
           </div>
           <div className="flex items-center space-x-8">
