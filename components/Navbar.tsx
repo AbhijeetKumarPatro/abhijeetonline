@@ -11,7 +11,6 @@ const navItems = [
   { href: '/projects', label: 'Projects' },
   { href: '/music', label: 'Music' },
   { href: '/travel', label: 'Travel' },
-  { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact' },
 ];
 
@@ -39,6 +38,23 @@ export default function Navbar() {
                 {item.label}
               </Link>
             ))}
+
+            <div className="relative group">
+              <Link
+                href="/blog"
+                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
+                  pathname.startsWith('/blog') ? 'text-blue-600' : 'text-gray-700'
+                }`}
+              >
+                Blog
+              </Link>
+              <div className="absolute right-0 mt-2 w-48 hidden group-hover:block bg-white shadow-lg rounded-md border border-gray-200 z-50">
+                <Link href="/blog?category=Banking" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50">Banking Blog</Link>
+                <Link href="/blog?category=Travel" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50">Travel Blog</Link>
+                <Link href="/blog?category=General" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50">General Blog</Link>
+              </div>
+            </div>
+
             <a
               href="#contact"
               className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors"
