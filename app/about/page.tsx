@@ -17,7 +17,7 @@ export default function About() {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-blue-200 mb-4">Professional Summary</h2>
           <p className="text-lg text-gray-300 leading-relaxed">
-            Abhijeet Kumar Patro is a Senior Business Analyst with 5+ years of experience in Banking and Financial Services specializing in the Cards domain with strong working knowledge of payment platforms and fraud analytics systems. He has contributed to enterprise banking initiatives across Citi, FIS Global, Hexaware, and Happiest Minds supporting card lifecycle optimization, onboarding workflows, credit risk processes, and fraud prevention platforms.
+            Abhijeet Kumar Patro is a Senior Business Analyst with 6+ years of experience in Banking and Financial Services specializing in the Cards domain with strong working knowledge of payment platforms and fraud analytics systems. He has contributed to enterprise banking initiatives across Citi, FIS Global, Hexaware, and Happiest Minds supporting card lifecycle optimization, onboarding workflows, credit risk processes, and fraud prevention platforms.
           </p>
         </section>
 
@@ -26,7 +26,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               { title: 'Traveler', description: 'Exploring spiritual destinations and cultural experiences across India' },
-              { title: 'Music Learner & Teacher', description: 'Passionate about guitar and sharing musical knowledge' },
+              { title: 'Musician', description: 'Passionate about guitar and sharing musical knowledge' },
               { title: 'Platform Builder', description: 'Creating educational platforms like LetsLearnBanking.com' },
               { title: 'Knowledge-Sharing Mindset', description: 'Committed to democratizing banking education and insights' },
               { title: 'Technology-Driven Banking Enthusiast', description: 'Bridging traditional banking with modern technology solutions' },
