@@ -1,4 +1,5 @@
 import { generateSEO } from '@/lib/seo';
+import Image from 'next/image';
 
 export const metadata = generateSEO(
   'Travel - Abhijeet Kumar Patro',
@@ -21,6 +22,37 @@ const travelExperiences = [
     title: 'Spiritual Travel Experiences',
     description: 'Connecting with sacred sites and holy places that have shaped India\'s spiritual landscape for millennia. These experiences deepen my understanding of inner peace and universal truths.',
     location: 'Sacred sites throughout India'
+  }
+];
+
+const travelPhotos = [
+  {
+    id: 1,
+    src: '/travel1.svg',
+    alt: 'Ancient temple in India',
+    title: 'Sacred Temple Visit',
+    description: 'A serene moment at one of India\'s ancient temples, where spirituality meets architectural beauty.'
+  },
+  {
+    id: 2,
+    src: '/travel2.svg',
+    alt: 'Himalayan mountains',
+    title: 'Himalayan Serenity',
+    description: 'Finding peace in the majestic Himalayas, a place of reflection and spiritual renewal.'
+  },
+  {
+    id: 3,
+    src: '/travel3.svg',
+    alt: 'Spiritual site in India',
+    title: 'Spiritual Journey',
+    description: 'Exploring sacred sites that have been centers of devotion for centuries.'
+  },
+  {
+    id: 4,
+    src: '/travel4.svg',
+    alt: 'Cultural experience',
+    title: 'Cultural Immersion',
+    description: 'Connecting with local traditions and experiencing the rich cultural tapestry of India.'
   }
 ];
 
@@ -47,6 +79,32 @@ export default function TravelPage() {
               <p className="text-gray-300 leading-relaxed">{experience.description}</p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-16">
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">Travel Gallery</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+            {travelPhotos.map((photo) => (
+              <div
+                key={photo.id}
+                className="bg-[#0b1f41] rounded-lg overflow-hidden shadow-sm border border-blue-500/20 hover:border-blue-400/40 transition-colors"
+              >
+                <div className="relative h-48 md:h-56">
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-white mb-2">{photo.title}</h3>
+                  <p className="text-gray-300 text-sm leading-relaxed">{photo.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="mt-12 bg-[#0b1f41] p-8 rounded-lg border border-blue-500/20">

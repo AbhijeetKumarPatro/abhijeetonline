@@ -1,0 +1,6 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#2d3748"/>
+  <path d="M0 150 L100 100 L200 180 L300 80 L400 140 L400 300 L0 300 Z" fill="#4a5568"/>
+  <circle cx="200" cy="100" r="30" fill="#68d391"/>
+  <text x="200" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#e2e8f0">Mountain Serenity</text>
+</svg>
