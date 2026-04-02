@@ -11,24 +11,6 @@ export const metadata = generateSEO(
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#020a1f] text-white">
-      {/* LetsLearnBanking Banner */}
-      <div className="bg-gradient-to-r from-[#04386c] to-[#0f5b98] text-white text-center py-3">
-        <p className="text-lg font-semibold">
-          🚀 Welcome to{' '}
-          <a
-            href="https://abhijeetonline.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-[#ffd966]"
-          >
-            AbhijeetOnline.com
-          </a>
-        </p>
-        <p className="text-sm mt-1 text-gray-200">
-          Thought leadership platform on Cards, Payments, Core Banking Foundations, Fraud Prevention, AI in Banking
-        </p>
-      </div>
-
       {/* Hero Section */}
       <section className="relative overflow-hidden py-24 px-4 sm:px-6 lg:px-8">
         <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_top,_rgba(60,_161,_252,_0.4),_transparent_40%)]" />
