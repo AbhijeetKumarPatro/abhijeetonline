@@ -64,19 +64,6 @@ export default function ContactPage() {
               </p>
               <div className="grid grid-cols-2 gap-3">
                 <a
-                  href="https://github.com/AbhijeetKumarPatro"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center p-3 bg-[#0b1f41] rounded-lg hover:bg-[#0f2549] transition-colors border border-gray-600/20"
-                >
-                  <div className="text-gray-300 text-xl mr-3">🐙</div>
-                  <div>
-                    <h4 className="font-medium text-white text-sm">GitHub</h4>
-                    <p className="text-gray-400 text-xs">@AbhijeetKumarPatro</p>
-                  </div>
-                </a>
-
-                <a
                   href="https://twitter.com/abhijeetpatro"
                   target="_blank"
                   rel="noopener noreferrer"
