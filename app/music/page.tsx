@@ -19,7 +19,7 @@ export default function MusicPage() {
           <p className="text-lg text-gray-300 leading-relaxed mb-6">
             My musical journey began with the guitar, a instrument that has taught me patience, precision, and the beauty of structured creativity. Through self-learning and dedicated practice, I've developed skills in acoustic guitar playing, focusing on fingerstyle techniques and music theory.
           </p>
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <p className="text-lg text-gray-300 leading-relaxed">
             Music has become more than a hobby—it's a discipline that enhances my analytical thinking and problem-solving abilities, qualities that translate directly to my work in banking technology and system design.
           </p>
         </section>

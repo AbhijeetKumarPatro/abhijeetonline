@@ -33,12 +33,12 @@ export default function ContactPage() {
                   href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors"
+                  className="flex items-center p-4 bg-[#0b1f41] rounded-lg hover:bg-[#0f2549] transition-colors border border-green-500/20"
                 >
-                  <div className="text-green-600 text-2xl mr-4">💬</div>
+                  <div className="text-green-400 text-2xl mr-4">💬</div>
                   <div>
-                    <h3 className="font-semibold text-gray-900">WhatsApp</h3>
-                    <p className="text-gray-600">Quick chat and discussions</p>
+                    <h3 className="font-semibold text-white">WhatsApp</h3>
+                    <p className="text-gray-300">Quick chat and discussions</p>
                   </div>
                 </a>
 
@@ -46,12 +46,12 @@ export default function ContactPage() {
                   href="https://linkedin.com/in/abhijeetpatro"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+                  className="flex items-center p-4 bg-[#0b1f41] rounded-lg hover:bg-[#0f2549] transition-colors border border-blue-500/20"
                 >
-                  <div className="text-blue-600 text-2xl mr-4">💼</div>
+                  <div className="text-blue-400 text-2xl mr-4">💼</div>
                   <div>
-                    <h3 className="font-semibold text-gray-900">LinkedIn</h3>
-                    <p className="text-gray-600">Professional networking</p>
+                    <h3 className="font-semibold text-white">LinkedIn</h3>
+                    <p className="text-gray-300">Professional networking</p>
                   </div>
                 </a>
               </div>
@@ -66,7 +66,7 @@ export default function ContactPage() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex-1 px-3 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="flex-1 px-3 py-2 border border-gray-600 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-[#0b1f41] text-white placeholder-gray-400"
                 />
                 <button className="bg-blue-600 text-white px-4 py-2 rounded-r-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                   Subscribe

@@ -70,14 +70,14 @@ export default function ExperiencePage() {
           {experiences.map((exp, index) => (
             <div
               key={`${exp.company}-${exp.role}`}
-              className="bg-white p-8 rounded-lg shadow-sm border"
+              className="bg-[#0b1f41] p-8 rounded-lg shadow-sm border border-blue-500/20"
             >
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
                 <div>
                   <h2 className="text-2xl font-semibold text-blue-200">{exp.company}</h2>
                   <h3 className="text-lg text-blue-300 font-medium">{exp.role}</h3>
                 </div>
-                <span className="text-sm text-gray-500 mt-2 sm:mt-0">{exp.period}</span>
+                <span className="text-sm text-gray-400 mt-2 sm:mt-0">{exp.period}</span>
               </div>
               <ul className="space-y-2">
                 {exp.achievements.map((achievement, i) => (
