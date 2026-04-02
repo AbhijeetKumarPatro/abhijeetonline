@@ -9,51 +9,44 @@ export const metadata = generateSEO(
 
 const experiences: Experience[] = [
   {
-    company: 'Happiest Minds',
-    role: 'Senior Business Analyst',
-    period: '2023 - Present',
+    company: 'The Math Company',
+    role: 'Product Manager - Senior Associate',
+    period: 'Sep 2022 — Jun 2023',
+    location: 'Bangalore',
     achievements: [
-      'BFSI presales initiatives supporting strategic business development',
-      'Solution strategy creation for enterprise banking clients',
-      'Arttha banking platform exposure and implementation support',
-      'Domain training delivery for banking technology solutions'
-    ]
-  },
-  {
-    company: 'The Math Company (Citi Engagement)',
-    role: 'Senior Associate Business Analyst',
-    period: '2021 - 2023',
-    achievements: [
-      'Commercial cards lifecycle optimization across Citi ecosystem',
-      'VisionPlus ecosystem enhancements and integration support',
-      'CitiManager improvements for operational efficiency',
-      'Credit risk workflow alignment and process optimization',
-      'KYC onboarding improvements for enhanced compliance',
-      'Fraud Early Warning System statistical modeling and implementation',
-      'UAT leadership for critical banking system releases'
+      'Led product initiatives for Co.dx platform in Banking & Financial Services (Low Code BI platform).',
+      'Enhanced UI/UX, feature functionality and enterprise banking capabilities with minimal coding workflow.',
+      'Collected and analyzed stakeholder requirements, and owned BRD/FRD/PRD and user story documentation.',
+      'Managed and mentored a 15-member team; improved delivery practices and reduced development cycles by 15%.',
+      'Built payment analytics and NER-based insight chatbot solutions for transaction pattern analysis and fraud detection.',
+      'Coordinated product launches with sales, onboarding, marketing and support for end-to-end banking solutions.'
     ]
   },
   {
     company: 'FIS Global',
-    role: 'Senior Analyst',
-    period: '2020 - 2021',
+    role: 'Product Manager - Senior Analyst',
+    period: 'Apr 2021 — Sep 2022',
+    location: 'Chennai',
     achievements: [
-      'SecurLOCK Equip fraud platform lifecycle ownership',
-      'Agile delivery coordination for fraud prevention solutions',
-      '25% overhead reduction through process optimization',
-      '15% throughput improvement in fraud detection systems'
+      'Owned SecurLOCK Equip retail banking fraud management product from concept to delivery.',
+      'Improved agile processes, resulting in 25% reduction in project overhead and 15% throughput gain.',
+      'Facilitated cross-functional coordination between development, QA, support and product teams.',
+      'Drove customer-facing product enhancements for fraud and credit risk mitigation based on user feedback.',
+      'Supported customer inquiries with deep domain knowledge in retail banking fraud prevention.',
+      'Ensured consistent delivery of product objectives and high-quality release execution.'
     ]
   },
   {
-    company: 'Hexaware Technologies (Citi Engagement)',
-    role: 'Business Analyst',
-    period: '2019 - 2020',
+    company: 'Hexaware Technologies',
+    role: 'Software Engineer (Citi bank Global)',
+    period: 'Feb 2018 — Nov 2020',
+    location: 'Chennai',
     achievements: [
-      'Commercial cards ecosystem enhancements',
-      'SWIFT and SEPA payment system exposure',
-      'Customer onboarding workflow improvements',
-      'Regression testing framework development and implementation',
-      'Fraud analytics contributions and system enhancements'
+      'Worked on Commercial Cards and Payments domain focusing on Card Life Cycle and Credit Risk management.',
+      'Led improvements to CitiManager application, ensuring SWIFT/SEPA compliance and onboarding efficiency.',
+      'Collaborated with cross-functional teams, managed sprint backlogs and conducted regression testing.',
+      'Implemented UAT processes and created product enhancements to optimize operational efficiency.',
+      'Developed advanced statistical models for fraud early warning and improved customer onboarding compliance.'
     ]
   }
 ];
@@ -76,6 +69,7 @@ export default function ExperiencePage() {
                 <div>
                   <h2 className="text-2xl font-semibold text-blue-200">{exp.company}</h2>
                   <h3 className="text-lg text-blue-300 font-medium">{exp.role}</h3>
+                  {exp.location && <p className="text-sm text-gray-500 mt-1">{exp.location}</p>}
                 </div>
                 <span className="text-sm text-gray-400 mt-2 sm:mt-0">{exp.period}</span>
               </div>
