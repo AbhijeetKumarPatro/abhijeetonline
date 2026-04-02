@@ -58,6 +58,66 @@ export default function ContactPage() {
             </div>
 
             <div>
+              <h3 className="text-xl font-semibold text-white mb-4">Follow Me</h3>
+              <p className="text-gray-300 mb-4">
+                Connect with me on social media for updates, insights, and discussions.
+              </p>
+              <div className="grid grid-cols-2 gap-3">
+                <a
+                  href="https://github.com/AbhijeetKumarPatro"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center p-3 bg-[#0b1f41] rounded-lg hover:bg-[#0f2549] transition-colors border border-gray-600/20"
+                >
+                  <div className="text-gray-300 text-xl mr-3">🐙</div>
+                  <div>
+                    <h4 className="font-medium text-white text-sm">GitHub</h4>
+                    <p className="text-gray-400 text-xs">@AbhijeetKumarPatro</p>
+                  </div>
+                </a>
+
+                <a
+                  href="https://twitter.com/abhijeetpatro"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center p-3 bg-[#0b1f41] rounded-lg hover:bg-[#0f2549] transition-colors border border-gray-600/20"
+                >
+                  <div className="text-blue-400 text-xl mr-3">🐦</div>
+                  <div>
+                    <h4 className="font-medium text-white text-sm">Twitter</h4>
+                    <p className="text-gray-400 text-xs">@abhijeetpatro</p>
+                  </div>
+                </a>
+
+                <a
+                  href="https://instagram.com/abhijeetpatro"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center p-3 bg-[#0b1f41] rounded-lg hover:bg-[#0f2549] transition-colors border border-gray-600/20"
+                >
+                  <div className="text-pink-400 text-xl mr-3">📷</div>
+                  <div>
+                    <h4 className="font-medium text-white text-sm">Instagram</h4>
+                    <p className="text-gray-400 text-xs">@abhijeetpatro</p>
+                  </div>
+                </a>
+
+                <a
+                  href="https://youtube.com/@abhijeetpatro"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center p-3 bg-[#0b1f41] rounded-lg hover:bg-[#0f2549] transition-colors border border-gray-600/20"
+                >
+                  <div className="text-red-500 text-xl mr-3">📺</div>
+                  <div>
+                    <h4 className="font-medium text-white text-sm">YouTube</h4>
+                    <p className="text-gray-400 text-xs">@abhijeetpatro</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div>
               <h3 className="text-xl font-semibold text-white mb-4">Newsletter</h3>
               <p className="text-gray-300 mb-4">
                 Stay updated with insights on cards, payments, fraud prevention, and banking technology.
