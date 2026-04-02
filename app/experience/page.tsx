@@ -9,44 +9,59 @@ export const metadata = generateSEO(
 
 const experiences: Experience[] = [
   {
-    company: 'The Math Company',
-    role: 'Product Manager - Senior Associate',
-    period: 'Sep 2022 — Jun 2023',
-    location: 'Bangalore',
+    company: 'Happiest Minds',
+    role: 'Senior Business Analyst',
+    period: 'Dec 2024 — Present',
+    location: 'Bangalore, India',
     achievements: [
-      'Led product initiatives for Co.dx platform in Banking & Financial Services (Low Code BI platform).',
-      'Enhanced UI/UX, feature functionality and enterprise banking capabilities with minimal coding workflow.',
-      'Collected and analyzed stakeholder requirements, and owned BRD/FRD/PRD and user story documentation.',
-      'Managed and mentored a 15-member team; improved delivery practices and reduced development cycles by 15%.',
-      'Built payment analytics and NER-based insight chatbot solutions for transaction pattern analysis and fraud detection.',
-      'Coordinated product launches with sales, onboarding, marketing and support for end-to-end banking solutions.'
+      'Led business analysis for SSRS to Microsoft Fabric & Power BI reporting migration, translating legacy report logic into modern semantic models and dashboards.',
+      'Collaborated with stakeholders to define business metrics, data mappings, filters, and reporting transformations across Client Admin and Investment reporting suites.',
+      'Prepared BRDs, functional documentation, KPI definitions, and report logic decomposition, enabling smooth alignment between business users, data engineers, and platform teams.',
+      'Participated in proposal development, client solutioning, and capability articulation for BFSI-focused transformation programs.'
+    ]
+  },
+  {
+    company: 'The Math Company',
+    role: 'Business Analyst - Senior Associate',
+    period: 'Sep 2022 — Jun 2023',
+    location: 'Bengaluru, India',
+    achievements: [
+      'Worked as a key member of the product team supporting Co.dx (Advanced Business Intelligence Low-Code Platform), enabling enterprises to accelerate decision intelligence through analytics-led applications.',
+      'Led requirement gathering, stakeholder workshops, and solution articulation for banking and financial services analytics use cases, translating business needs into platform-ready functional workflows.',
+      'Contributed to development of domain-aligned analytical solutions and reusable accelerators across risk, operations, and reporting use cases.',
+      'Partnered with data engineers, visualization teams, and product stakeholders to define semantic logic, KPIs, and business transformation narratives for enterprise dashboards.',
+      'Supported solution design for low-code analytics applications, enabling faster deployment of decision intelligence use cases across BFSI clients.'
     ]
   },
   {
     company: 'FIS Global',
-    role: 'Product Manager - Senior Analyst',
+    role: 'Business Analyst - Senior Analyst',
     period: 'Apr 2021 — Sep 2022',
-    location: 'Chennai',
+    location: 'Chennai, India',
     achievements: [
-      'Owned SecurLOCK Equip retail banking fraud management product from concept to delivery.',
-      'Improved agile processes, resulting in 25% reduction in project overhead and 15% throughput gain.',
-      'Facilitated cross-functional coordination between development, QA, support and product teams.',
-      'Drove customer-facing product enhancements for fraud and credit risk mitigation based on user feedback.',
-      'Supported customer inquiries with deep domain knowledge in retail banking fraud prevention.',
-      'Ensured consistent delivery of product objectives and high-quality release execution.'
+      'As an Analyst for SecurLOCK Equip, a retail banking fraud management product, I oversaw the entire project life cycle, from inception to completion.',
+      'Prepared structured documentation including BRDs, functional specifications, metric definitions, and workflow decomposition to streamline delivery execution.',
+      'Coordinated Development and Testing teams to ensure seamless project execution aligned with objectives.',
+      'Implemented agile processes to streamline project workflows, resulting in a notable 25% reduction in project overheads and a 15% increase in project throughput.',
+      'Assisted customers with product inquiries by providing information on features and benefits of fraud and credit risk mitigation.',
+      'Collaborated closely with product and engineering teams to identify areas for product enhancement based on customer feedback, ensuring continuous improvement.',
+      'Enhanced project efficiency and customer satisfaction through targeted improvements, resulting in measurable gains in project outcomes and customer engagement.'
     ]
   },
   {
     company: 'Hexaware Technologies',
-    role: 'Software Engineer (Citi bank Global)',
+    role: 'Business Analyst - Software Engineer',
     period: 'Feb 2018 — Nov 2020',
-    location: 'Chennai',
+    location: 'Chennai, India',
     achievements: [
-      'Worked on Commercial Cards and Payments domain focusing on Card Life Cycle and Credit Risk management.',
-      'Led improvements to CitiManager application, ensuring SWIFT/SEPA compliance and onboarding efficiency.',
-      'Collaborated with cross-functional teams, managed sprint backlogs and conducted regression testing.',
-      'Implemented UAT processes and created product enhancements to optimize operational efficiency.',
-      'Developed advanced statistical models for fraud early warning and improved customer onboarding compliance.'
+      'As a Business Analyst at CITI bank Global, I led initiatives within the Commercial Cards-Payments domain, focusing on optimizing the Card Life Cycle, VisionPlus System, Enhancing Credit Card management, and integrating payment functionalities into the Citi Manager application.',
+      'Collaborated cross-functionally to prioritize product features, aligning with customer needs and business objectives, ensuring maximum value delivery.',
+      'Applied practical knowledge of KYC data collection procedures to enhance customer onboarding processes and ensure regulatory compliance.',
+      'Developed and maintained functional and regression tests to uphold product quality standards, enhancing user satisfaction and reliability.',
+      'Orchestrated user acceptance testing (UAT) sessions to validate product functionality and gather actionable feedback for continuous improvement.',
+      'Executed enhancements in CitiManager that improved user experience.',
+      'Spearheaded the development of statistical analysis models in the Advanced Fraud Early Warning System contributing to proactive fraud mitigation strategies.',
+      'Established robust regression testing procedures, ensuring consistent product quality and reliability with each software release.'
     ]
   }
 ];
