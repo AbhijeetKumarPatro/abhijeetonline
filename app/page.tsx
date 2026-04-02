@@ -21,10 +21,10 @@ export default function Home() {
               Hi, I'm <span className="text-[#62c7ff]">Abhijeet Kumar Patro</span>
             </h1>
             <p className="text-xl text-gray-300 mb-6">
-              Senior Business Analyst | Cards Domain Specialist | Payments Professional | Product Thinker
+              Senior Business Analyst | Cards & Payments Professional | Product Thinker
             </p>
             <p className="text-gray-200 leading-relaxed mb-8 max-w-xl">
-              Helping organizations design smarter card lifecycle solutions, strengthen fraud prevention strategies, and enhance payment platform experiences across enterprise banking ecosystems.
+              A Results-driven Banking professional with 6+ years of experience across enterprise banking platforms, commercial cards, fraud prevention systems, and digital payment ecosystems. Proven track record of delivering scalable product solutions, optimizing card lifecycle processes, and enabling data-driven decision-making across global banking environments.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-lg">
               <Link
