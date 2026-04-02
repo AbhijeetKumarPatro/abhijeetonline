@@ -25,7 +25,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               <Image
-                src="/logo.svg"
+                src="/Mylogo.PNG"
                 alt="Abhijeet Kumar Patro"
                 width={180}
                 height={45}
