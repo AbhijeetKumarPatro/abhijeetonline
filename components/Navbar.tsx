@@ -31,8 +31,8 @@ export default function Navbar() {
                 alt="Abhijeet Kumar Patro"
                 width={0}
                 height={0}
-                sizes="180px"
-                className="w-auto h-8 object-contain"
+                sizes="220px"
+                className="w-auto h-10 sm:h-12 md:h-14 object-contain"
               />
               <span className="sr-only">AbhijeetOnline</span>
             </Link>
