@@ -39,12 +39,10 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href={process.env.NEXT_PUBLIC_LETSLEARNBANKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contact"
               className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors"
             >
-              Visit LetsLearnBanking →
+              Get In Touch →
             </a>
           </div>
         </div>

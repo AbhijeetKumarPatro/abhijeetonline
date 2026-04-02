@@ -14,14 +14,14 @@ export default function Home() {
       {/* LetsLearnBanking Banner */}
       <div className="bg-gradient-to-r from-[#04386c] to-[#0f5b98] text-white text-center py-3">
         <p className="text-lg font-semibold">
-          🚀 Building{' '}
+          🚀 Welcome to{' '}
           <a
-            href={process.env.NEXT_PUBLIC_LETSLEARNBANKING_URL}
+            href="https://abhijeetonline.com"
             target="_blank"
             rel="noopener noreferrer"
             className="underline hover:text-[#ffd966]"
           >
-            LetsLearnBanking.com
+            AbhijeetOnline.com
           </a>
         </p>
         <p className="text-sm mt-1 text-gray-200">
@@ -58,12 +58,10 @@ export default function Home() {
                 Projects
               </Link>
               <a
-                href={process.env.NEXT_PUBLIC_LETSLEARNBANKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#contact"
                 className="text-center bg-[#00b4ff] text-slate-950 px-5 py-3 rounded-xl font-bold hover:bg-[#00c2ff] transition"
               >
-                LetsLearnBanking
+                Get In Touch
               </a>
             </div>
           </div>

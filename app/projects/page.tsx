@@ -31,10 +31,10 @@ const projects: Project[] = [
   },
   // Platform Building Initiatives
   {
-    title: 'LetsLearnBanking.com',
-    description: 'Building a comprehensive thought leadership platform covering Cards, Payments, Core Banking Foundations, Fraud Prevention, and AI in Banking. A gateway for banking professionals and enthusiasts.',
+    title: 'AbhijeetOnline.com',
+    description: 'Personal website showcasing expertise in Cards domain, Payments platforms, and Fraud analytics. A professional portfolio highlighting 4+ years of banking technology experience.',
     category: 'Platform Building Initiatives',
-    link: process.env.NEXT_PUBLIC_LETSLEARNBANKING_URL
+    link: 'https://abhijeetonline.com'
   },
   // Personal Learning Initiatives
   {
